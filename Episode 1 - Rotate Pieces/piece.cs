@@ -17,7 +17,7 @@ public class piece : MonoBehaviour {
 	void Update () {
 	
 
-		if (transform.root.eulerAngles.z != realRotation) {
+		if (transform.rotation.eulerAngles.z != realRotation) {
 			transform.rotation = Quaternion.Lerp (transform.rotation, Quaternion.Euler (0, 0, realRotation), speed);
 		}
 
